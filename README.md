@@ -1,2 +1,2 @@
 # Solar Activity Forecast Program
-Inspired by google application for PV solar energy estimator and code work at https://github.com/glassb/solar-forecast has examined and Python software that forecast sun activity with feeded solar irradiance data.
+Inspired by Google's photovoltaic (PV) solar energy estimator and the codebase available at glassb/solar-forecast, I have explored Python-based software that forecasts solar activity using input solar irradiance data.
