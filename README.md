@@ -6,3 +6,5 @@ Inspired by Google's solar energy estimator and the codebase available at glassb
 The solar activity forecasting code leverages the pvlib Python library to obtain accurate solar irradiance data. This library provides a comprehensive suite of tools for modeling photovoltaic systems, including functions for calculating clear-sky irradiance, solar position, and atmospheric conditions. These features were instrumental in building a reliable and data-driven forecasting model.
 
 ![Alt text](Figure_1.png)
+
+A three-year dataset of solar irradiance was used to train the forecasting model, enabling daily predictions of solar activity. The project implemented both Linear Regression and Random Forest Regressors to evaluate performance. Among the two, the Random Forest Regressor consistently delivered more accurate results. Model outputs were benchmarked against pvlib's clear-sky irradiance estimates to assess reliability and precision.
