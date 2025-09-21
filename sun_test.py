@@ -1,3 +1,7 @@
+# Sun Activity Predictor
+# This implementation incorporates selected components and ideas from the open-source project:
+# https://github.com/glassb/solar-forecast
+# The referenced work provided valuable insights into solar forecasting techniques and data handling.
 import tkinter as tk
 from tkinter import filedialog, messagebox
 # Tkinter GUI
@@ -658,3 +662,4 @@ btn_plot_est = tk.Button(bottom_frame, text="GetData&PlotResults", command=plot_
 btn_plot_est.pack(side="left", padx=5)
 
 root.mainloop()
+
