@@ -29,6 +29,7 @@ global selected_reg_value
 selected_reg_value = None
 global selected_reg_value_model
 selected_reg_value_model = None
+
 def select():
     global df
    
@@ -55,7 +56,6 @@ def select():
     except Exception as e:
         messagebox.showerror("Error", f"Failed to process CSV:\n{e}")
         
-
 def prepare():
     global df
    
@@ -112,7 +112,6 @@ def prepare():
     plt.tight_layout()
     plt.show()
     
-
 def model():
     global df, sunny_model, cloudy_model, verycloudy_model,selected_reg_value
    
@@ -146,8 +145,6 @@ def model():
     else:
         print("No valid selection")
     
-    
-
     print('\n\nSUNNY MODEL')
     target_predict = sunny_model.predict(features_test)
     MSE = mean_squared_error(target_test, target_predict)
@@ -192,8 +189,6 @@ def model():
     else:
         print("No valid selection")
  
-    
-
     print('\n\nCLOUDY MODEL')
     target_predict = cloudy_model.predict(features_test)
     MSE = mean_squared_error(target_test, target_predict)
@@ -215,7 +210,6 @@ def model():
     verycloudy_df = df[df['Cloud_Index'] == 'VeryCloudy'].copy()
     verycloudy_df['Time_Minutes'] = pd.to_datetime(verycloudy_df['Time'], format='%H:%M:%S').dt.hour * 60 + \
                                     pd.to_datetime(verycloudy_df['Time'], format='%H:%M:%S').dt.minute
-
     features = verycloudy_df[[
         "Month", "Time_Minutes", "Solar_w/m2", "Temperature_F", "UV",
         "EnergyProd-Wh", "Energy_Difference"
@@ -237,8 +231,6 @@ def model():
         verycloudy_model.fit(features_train, target_train)
     else:
         print("No valid selection")
-
-    
 
     print('\n\nVERY CLOUDY MODEL')
     target_predict = verycloudy_model.predict(features_test)
