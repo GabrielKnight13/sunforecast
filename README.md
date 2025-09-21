@@ -8,3 +8,5 @@ The solar activity forecasting code leverages the pvlib Python library to obtain
 ![Alt text](Figure_1.png)
 
 A three-year dataset of solar irradiance was used to train the forecasting model, enabling daily predictions of solar activity. The project implemented both Linear Regression and Random Forest Regressors to evaluate performance. Among the two, the Random Forest Regressor consistently delivered more accurate results. Model outputs were benchmarked against pvlib's clear-sky irradiance estimates to assess reliability and precision.
+
+![Alt text](Figure_2.png)
