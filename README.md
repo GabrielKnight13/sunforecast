@@ -14,3 +14,9 @@ A three-year dataset of solar irradiance was used to train the forecasting model
 The model includes good testing capabilities, and visualization functions are provided to plot both the test results and daily solar activity predictions for easier analysis and interpretation.
 
 ![Alt text](Figure_5.png)
+
+The pvlib library provides robust capabilities for photovoltaic (PV) system design and analysis. As part of future development, these features will be further explored and integrated to support the goal of building a comprehensive web-based application.
+
+![Alt text](Figure_3.png) ![Alt text](Figure_4.png)
+
+
