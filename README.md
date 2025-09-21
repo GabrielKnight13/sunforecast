@@ -12,3 +12,5 @@ A three-year dataset of solar irradiance was used to train the forecasting model
 ![Alt text](Figure_2.png)
 
 The model includes good testing capabilities, and visualization functions are provided to plot both the test results and daily solar activity predictions for easier analysis and interpretation.
+
+![Alt text](Figure_5.png)
