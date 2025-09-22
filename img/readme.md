@@ -1,1 +1,1 @@
-These are the plots
+These are the figures.
